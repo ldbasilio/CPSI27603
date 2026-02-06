@@ -1,12 +1,16 @@
 #include <iostream>
-#include <random>
+
+int add(int a, int b) 
+{ 
+    return a + b; 
+} // In file1.cpp
+
+int add(int a, int b) 
+{ 
+    return a + b; 
+} // In file2.cpp
  
 int main() 
 {
-    std::mt19937 mt{std::random_device{}()};
-    std::uniform_int_distribution<int> die6{-100, 100};
- 
-    std::cout << "mt()=" << mt() << "\n";
-    std::cout << "die6(mt)=" << die6(mt) << "\n";
-    return 0;
+  return 0;
 }
